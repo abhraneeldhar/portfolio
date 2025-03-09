@@ -275,7 +275,10 @@
     background-color: unset;
     padding: 10px;
     border:2px solid #f72129;
-    transition: all 0.5s;
+    transition: all 0.2s;
+}
+.downloadDiv button:hover{
+    background-color: #f72129 ;
 }
 
 
