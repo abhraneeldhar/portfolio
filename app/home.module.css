@@ -81,9 +81,6 @@
     z-index: 2;
     width: 500px;
     padding: 30px;
-    
-    /* background-color: blue; */
-
 }
 
 .heroTextDiv h1 {
@@ -308,9 +305,8 @@
         justify-content: end;
     }
     .nameNShi{
-        padding: 10px 0px;
+        padding-top: 10px;
         filter: none;
-        
         
         background:
             linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),

@@ -64,22 +64,22 @@ export default function Home() {
       <div className={styles.socialsDiv}>
         <h2>Connect with the Tech Mafia</h2>
         <div className={styles.socialsOptionContainer}>
-          <a href="">
+          <a href="https://github.com/abhraneeldhar" target="_blank">
             <div className={styles.socialOption}>
               <Github color="white" /><p>GitHub</p>
             </div>
           </a>
-          <a href="linkedin">
+          <a href="https://linkedin.com/in/abhraneeldhar/" target="_blank">
             <div className={styles.socialOption}>
               <Linkedin color="white" /><p>LinkedIn</p>
             </div>
           </a>
-          <a href="">
+          <a href="https://x.com/abhraneeldhar" target="_blank">
             <div className={styles.socialOption}>
               <Twitter color="white" /><p>Twitter</p>
             </div>
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/abhraneeldhar/" target="_blank">
             <div className={styles.socialOption}>
               <Instagram color="white" /><p>Instagram</p>
             </div>
