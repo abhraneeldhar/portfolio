@@ -12,7 +12,7 @@
 
 
     --dot-bg: rgb(0, 0, 0);
-    --dot-color: white;
+    --dot-color: rgba(255, 255, 255, 0.616);
     --dot-size: 1px;
     --dot-space: 22px;
     background:
@@ -117,9 +117,6 @@
     text-align: left;
 }
 
-.aboutTextDiv:hover {
-    transform: translateX(-5%);
-}
 
 .socialsDiv {
     margin-top: 10px;
@@ -299,10 +296,7 @@
         padding: 10px 0px;
         filter: none;
         
-        --dot-bg: rgb(0, 0, 0);
-        --dot-color: white;
-        --dot-size: 1px;
-        --dot-space: 22px;
+        
         background:
             linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
             linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
@@ -321,10 +315,7 @@
         font-size: 15px;
         border-radius: 0;
     }
-    .aboutTextDiv:hover{
-        transform: translateX(0);
-
-    }
+    
     .socialsDiv{
         justify-content: center;
     }
