@@ -41,9 +41,10 @@ export default function Home() {
         </div>
 
         <div className={styles.heroTextDiv}>
-          <h1>Abhraneel Dhar</h1>
-          
-          <h2>Computer Science undergrad by day <br /><span>Keyboard Wizard</span> by night</h2>
+          <div className={styles.nameNShi}>
+            <h1>Abhraneel Dhar</h1>
+            <h2>Computer Science undergrad by day <br /><span>Keyboard Wizard</span> by night</h2>
+          </div>
           <div className={styles.aboutTextDiv}>
             <p>All rounded developer with a broad skill set in IT and programming, specialized in <br /> Full-Stack Web and Android Development. <br /> With a strong foundation in computer science, always aiming to create scalable and efficient solutions for real-world problems.</p>
             <div className={styles.socialsDiv}>

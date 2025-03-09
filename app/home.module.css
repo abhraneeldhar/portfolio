@@ -295,12 +295,27 @@
         width: 100%;
         justify-content: end;
     }
+    .nameNShi{
+        padding: 10px 0px;
+        filter: none;
+        
+        --dot-bg: rgb(0, 0, 0);
+        --dot-color: white;
+        --dot-size: 1px;
+        --dot-space: 22px;
+        background:
+            linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+            linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+            var(--dot-color);
+    
+    }
     .heroTextDiv h1{
         font-size: 40px;
         text-align: center;
     }
     .heroDiv h2{
         text-align: center;
+        margin: 0;
     }
     .aboutTextDiv{
         font-size: 15px;
