@@ -35,8 +35,8 @@ export default function Home() {
       </div>
       <div className={styles.heroDiv}>
 
-        <div className={styles.gltichTextDiv}>
 
+        <div className={styles.gltichTextDiv}>
           <h1 className={styles.glitch}>{words[index]}</h1>
         </div>
 
@@ -44,40 +44,47 @@ export default function Home() {
           <div className={styles.nameNShi}>
             <h1>Abhraneel Dhar</h1>
             <h2>Computer Science undergrad by day <br /><span>Keyboard Wizard</span> by night</h2>
-          </div>
-          <div className={styles.aboutTextDiv}>
-            <p>All rounded developer with a broad skill set in IT and strong foundation in computer science, always aiming to create scalable and efficient solutions for real-world problems.</p>
-            <div className={styles.socialsDiv}>
-              <a href="">
-                <div className={styles.socialOption}>
-                  <Github color="white" /><p>GitHub</p>
-                </div>
-              </a>
-              <a href="linkedin">
-                <div className={styles.socialOption}>
-                  <Linkedin color="white" /><p>LinkedIn</p>
-                </div>
-              </a>
-
-              <a href="">
-                <div className={styles.socialOption}>
-                  <Twitter color="white" /><p>Twitter</p>
-                </div>
-              </a>
-              <a href="">
-                <div className={styles.socialOption}>
-                  <Instagram color="white" /><p>Instagram</p>
-                </div>
-              </a>
+            <div className={styles.aboutTextDiv}>
+              <p>All rounded developer with a broad skill set in IT and strong foundation in computer science, always aiming to create scalable and efficient solutions for real-world problems.</p>
             </div>
           </div>
-          <div className={styles.downloadDiv}>
 
+          <div className={styles.downloadDiv}>
             <button>Get CV</button>
             <button>Get Resume</button>
           </div>
+
+
+
         </div>
         <Image className={styles.heroImage} src={heroImage} alt="" />
+
+      </div>
+
+      <div className={styles.socialsDiv}>
+        <h2>Connect with the Tech Mafia</h2>
+        <div className={styles.socialsOptionContainer}>
+          <a href="">
+            <div className={styles.socialOption}>
+              <Github color="white" /><p>GitHub</p>
+            </div>
+          </a>
+          <a href="linkedin">
+            <div className={styles.socialOption}>
+              <Linkedin color="white" /><p>LinkedIn</p>
+            </div>
+          </a>
+          <a href="">
+            <div className={styles.socialOption}>
+              <Twitter color="white" /><p>Twitter</p>
+            </div>
+          </a>
+          <a href="">
+            <div className={styles.socialOption}>
+              <Instagram color="white" /><p>Instagram</p>
+            </div>
+          </a>
+        </div>
       </div>
 
 
