@@ -1,0 +1,317 @@
+.main {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.heroDiv {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+    --dot-bg: rgb(0, 0, 0);
+    --dot-color: white;
+    --dot-size: 1px;
+    --dot-space: 22px;
+    background:
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+
+
+}
+
+.tabDiv {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    padding: 5px 0px;
+    /* margin: 10px; */
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* background-color: blue; */
+}
+
+.tabMain {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    /* width: 99%; */
+    height: 40px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    padding: 0px 4px;
+    color: white;
+    gap: 5px;
+}
+
+.tabMain a {
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+.tabMain a:hover{
+    background-color: white;
+    color: black;
+}
+.heroImage {
+    object-fit: contain;
+    height: 95vh;
+    width: fit-content;
+    animation: heroImageAnimation 2s;
+    position: absolute;
+}
+
+.heroTextDiv {
+    position: absolute;
+    right: 0px;
+    color: white;
+    text-align: right;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    width: 500px;
+    padding: 30px;
+
+}
+
+.heroTextDiv h1 {
+    font-weight: 400;
+    font-size: 50px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+.heroTextDiv h2 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.heroTextDiv h2 span {
+    color: #f72129;
+    filter: drop-shadow(0px 0px 5px #f72129);
+    font-weight: 600;
+    /* background-color: #e81f26; */
+}
+
+.aboutTextDiv {
+    background-color: #f72129;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    /* box-shadow: 10px 5px 40px #f721288e; */
+    filter: drop-shadow(0px 0px 15px #f72129);
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.aboutTextDiv:hover {
+    transform: translateX(-5%);
+}
+
+.socialsDiv {
+    margin-top: 10px;
+    display: flex;
+    gap: 7px;
+}
+
+.socialOption {
+    display: flex;
+    /* gap: 5px; */
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+.socialOption p {
+    color: white;
+    font-size: 0;
+    transition: all 0.2s;
+    vertical-align: middle;
+}
+
+.socialOption:hover p {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.splashLogoDiv {
+    position: fixed;
+    display: flex;
+    background-color: #f72129;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    animation: splashLogoDivAnimation 1.5s;
+    z-index: 100;
+    transform: translateY(-100%);
+}
+
+.splashLogo {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    animation: splashLogoAnimation 0.5s;
+}
+
+
+
+@keyframes heroImageAnimation {
+    0% {
+        transform: translateX(-30%);
+    }
+
+}
+
+@keyframes splashLogoDivAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+        display: none;
+    }
+}
+@keyframes splashLogoAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+.gltichTextDiv {
+    position: fixed;
+
+    top: 40%;
+    left: 50%;
+    z-index: 5;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.glitch {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    animation: glitch-animation 0.8s infinite alternate;
+    filter: drop-shadow(0px 0px 20px #5ccbff);
+
+}
+
+@keyframes glitch-animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-2px);
+    }
+
+    40% {
+        transform: translateX(2px);
+    }
+
+    60% {
+        transform: translateX(-1px);
+    }
+
+    80% {
+        transform: translateX(1px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.downloadDiv{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.downloadDiv button{
+    flex: 1;
+    font-size: 20px;
+    color: #fed534;
+    background-color: unset;
+    padding: 10px;
+    border:2px solid #fed534;
+    transition: all 0.5s;
+}
+
+
+
+@media (max-width:500px) {
+    .main{
+        overflow-x: hidden;
+    }
+    .tabMain a{
+        padding: 5px 10px;
+    }
+    .heroImage{
+        left: -100px;
+        top: 10%;
+        height: 70vh;
+    }
+    .gltichTextDiv{
+        top: 12%;
+        width: 100%;
+    }
+    .heroTextDiv{
+        /* background-color: blue; */
+        padding: 0;
+        width: 100%;
+        justify-content: end;
+    }
+    .heroTextDiv h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .heroDiv h2{
+        text-align: center;
+    }
+    .aboutTextDiv{
+        font-size: 15px;
+        border-radius: 0;
+    }
+    .aboutTextDiv:hover{
+        transform: translateX(0);
+
+    }
+    .socialsDiv{
+        justify-content: center;
+    }
+    .downloadDiv button{
+        padding: 5px;
+    }
+}
