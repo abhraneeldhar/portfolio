@@ -35,10 +35,11 @@ export default function Home() {
       </div>
       <div className={styles.heroDiv}>
 
-
         <div className={styles.gltichTextDiv}>
           <h1 className={styles.glitch}>{words[index]}</h1>
         </div>
+
+        <Image className={styles.heroImage} src={heroImage} alt="" />
 
         <div className={styles.heroTextDiv}>
           <div className={styles.nameNShi}>
@@ -47,45 +48,47 @@ export default function Home() {
             <div className={styles.aboutTextDiv}>
               <p>All rounded developer with a broad skill set in IT and strong foundation in computer science, always aiming to create scalable and efficient solutions for real-world problems.</p>
             </div>
+
+            <div className={styles.downloadDiv}>
+              <button>Get CV</button>
+              <button>Get Resume</button>
+            </div>
+
           </div>
 
-          <div className={styles.downloadDiv}>
-            <button>Get CV</button>
-            <button>Get Resume</button>
+
+
+          <div className={styles.socialsDiv}>
+            <h2>Connect with the Tech Mafia</h2>
+            <div className={styles.socialsOptionContainer}>
+              <a href="https://github.com/abhraneeldhar" target="_blank">
+                <div className={styles.socialOption}>
+                  <Github color="white" /><p>GitHub</p>
+                </div>
+              </a>
+              <a href="https://linkedin.com/in/abhraneeldhar/" target="_blank">
+                <div className={styles.socialOption}>
+                  <Linkedin color="white" /><p>LinkedIn</p>
+                </div>
+              </a>
+              <a href="https://x.com/abhraneeldhar" target="_blank">
+                <div className={styles.socialOption}>
+                  <Twitter color="white" /><p>Twitter</p>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/abhraneeldhar/" target="_blank">
+                <div className={styles.socialOption}>
+                  <Instagram color="white" /><p>Instagram</p>
+                </div>
+              </a>
+            </div>
           </div>
-
-
 
         </div>
-        <Image className={styles.heroImage} src={heroImage} alt="" />
+
 
       </div>
 
-      <div className={styles.socialsDiv}>
-        <h2>Connect with the Tech Mafia</h2>
-        <div className={styles.socialsOptionContainer}>
-          <a href="https://github.com/abhraneeldhar" target="_blank">
-            <div className={styles.socialOption}>
-              <Github color="white" /><p>GitHub</p>
-            </div>
-          </a>
-          <a href="https://linkedin.com/in/abhraneeldhar/" target="_blank">
-            <div className={styles.socialOption}>
-              <Linkedin color="white" /><p>LinkedIn</p>
-            </div>
-          </a>
-          <a href="https://x.com/abhraneeldhar" target="_blank">
-            <div className={styles.socialOption}>
-              <Twitter color="white" /><p>Twitter</p>
-            </div>
-          </a>
-          <a href="https://www.instagram.com/abhraneeldhar/" target="_blank">
-            <div className={styles.socialOption}>
-              <Instagram color="white" /><p>Instagram</p>
-            </div>
-          </a>
-        </div>
-      </div>
 
 
     </div>
