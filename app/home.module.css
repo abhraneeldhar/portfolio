@@ -25,19 +25,30 @@
 
 .tabDiv {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 40px;
     padding: 5px 0px;
-    /* margin: 10px; */
+    align-items: center;
     z-index: 5;
     position: fixed;
     width: 100%;
     top: 0;
     /* background-color: blue; */
 }
+.tabDiv img{
+    height: 30px;
+    width: fit-content;
+    object-fit: contain;
+    margin-left: 10px;
+    border-radius:2px;
+    transition: all 0.2s ;
+    
+}
+.tabDiv img:hover{
+    filter: invert(1);
+}
 
 .tabMain {
-    background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     /* width: 99%; */
     height: 40px;
@@ -52,10 +63,10 @@
 .tabMain a {
     text-decoration: none;
     color: white;
-    background: black;
+    
     padding: 5px 20px;
     border-radius: 5px;
-    transition: all 0.6s;
+    transition: all 0.3s;
 }
 .tabMain a:hover{
     background-color: white;
@@ -281,7 +292,17 @@
     .main{
         overflow-x: hidden;
     }
+    .tabDiv{
+        justify-content: center;
+    }
+    .tabDiv img{
+        display: none;
+    }
+    .tabMain{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
     .tabMain a{
+        background: black;
         padding: 5px 10px;
     }
     .heroImage{

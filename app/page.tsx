@@ -2,6 +2,8 @@
 import Image from "next/image"
 import heroImage from "../public/heroImage.png"
 import splashImage from "../public/splashlogo.jpg"
+import iamart from "../public/iamartwhite.png"
+
 
 import styles from "./home.module.css"
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react"
@@ -26,11 +28,14 @@ export default function Home() {
         <Image className={styles.splashLogo} src={splashImage} alt="" />
       </div>
       <div className={styles.tabDiv}>
+        <a href="#">
+          <Image src={iamart} alt="i am Art" />
+        </a>
         <div className={styles.tabMain}>
-          <a className={styles.tabOption} href="">About</a>
           <a className={styles.tabOption} href="">Skillset</a>
           <a className={styles.tabOption} href="">Projects</a>
           <a className={styles.tabOption} href="">Experience</a>
+          <a className={styles.tabOption} href="">About</a>
         </div>
       </div>
       <div className={styles.heroDiv}>
