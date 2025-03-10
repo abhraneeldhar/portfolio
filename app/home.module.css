@@ -35,16 +35,18 @@
     top: 0;
     /* background-color: blue; */
 }
-.tabDiv img{
+
+.tabDiv img {
     height: 30px;
     width: fit-content;
     object-fit: contain;
     margin-left: 10px;
-    border-radius:2px;
-    transition: all 0.2s ;
-    
+    border-radius: 2px;
+    transition: all 0.2s;
+
 }
-.tabDiv img:hover{
+
+.tabDiv img:hover {
     filter: invert(1);
 }
 
@@ -63,15 +65,17 @@
 .tabMain a {
     text-decoration: none;
     color: white;
-    
+
     padding: 5px 20px;
     border-radius: 5px;
     transition: all 0.3s;
 }
-.tabMain a:hover{
+
+.tabMain a:hover {
     background-color: white;
     color: black;
 }
+
 .heroImage {
     object-fit: contain;
     height: 95vh;
@@ -96,9 +100,11 @@
     width: 100%;
     padding: 30px;
 }
-.nameNShi{
+
+.nameNShi {
     width: 500px;
 }
+
 .heroTextDiv h1 {
     font-weight: 400;
     font-size: 50px;
@@ -127,20 +133,22 @@
     text-align: left;
 }
 
-.socialsDiv{
+.socialsDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateY(-100%) translateX(-50%); 
+    transform: translateY(-100%) translateX(-50%);
 }
-.socialsDiv h2{
+
+.socialsDiv h2 {
     color: white;
     font-weight: 400;
     margin: 0;
 }
+
 .socialsOptionContainer {
     margin-top: 10px;
     display: flex;
@@ -203,7 +211,8 @@
     0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(0);
     }
 
@@ -213,11 +222,12 @@
     }
 }
 
-@keyframes splashLogoAnimation{
-    0%{
+@keyframes splashLogoAnimation {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -267,92 +277,108 @@
 }
 
 
-.downloadDiv{
+.downloadDiv {
     display: flex;
     padding: 10px;
     margin: 0px 10px;
     gap: 10px;
 }
-.downloadDiv button{
+
+.downloadDiv button {
     flex: 1;
     font-size: 20px;
     color: white;
     background-color: unset;
     padding: 10px;
-    border:2px solid #f72129;
+    border: 2px solid #f72129;
     transition: all 0.2s;
 }
-.downloadDiv button:hover{
-    background-color: #f72129 ;
+
+.downloadDiv button:hover {
+    background-color: #f72129;
 }
 
 
 
 @media (max-width:500px) {
-    .main{
+    .main {
         overflow-x: hidden;
     }
-    .tabDiv{
+
+    .tabDiv {
         justify-content: center;
     }
-    .tabDiv img{
+
+    .tabDiv img {
         display: none;
     }
-    .tabMain{
+
+    .tabMain {
         background-color: rgba(255, 255, 255, 0.3);
     }
-    .tabMain a{
+
+    .tabMain a {
         background: black;
         padding: 5px 10px;
     }
-    .heroImage{
+
+    .heroImage {
         left: -10%;
         top: 10%;
         height: 70vh;
     }
-    .gltichTextDiv{
+
+    .gltichTextDiv {
         top: 12%;
         width: 100%;
     }
-    .heroTextDiv{
+
+    .heroTextDiv {
         /* background-color: blue; */
         padding: 0;
         width: 100%;
         justify-content: end;
         align-items: center;
     }
-    .nameNShi{
+
+    .nameNShi {
         padding-top: 10px;
         filter: none;
         width: 100%;
-        
+        --dot-bg: rgba(0, 0, 0, 0.8);
         background:
             linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
             linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
             var(--dot-color);
-    
+        
+
     }
-    .heroTextDiv h1{
+
+    .heroTextDiv h1 {
         font-size: 40px;
         text-align: center;
     }
-    .heroDiv h2{
+
+    .heroDiv h2 {
         text-align: center;
         margin: 0px 5px;
     }
-    .aboutTextDiv{
+
+    .aboutTextDiv {
         font-size: 15px;
         border-radius: 0;
     }
-    .socialsDiv{
+
+    .socialsDiv {
         position: static;
         transform: none;
     }
-    
-    .socialsOptionContainer{
+
+    .socialsOptionContainer {
         justify-content: center;
     }
-    .downloadDiv button{
+
+    .downloadDiv button {
         padding: 5px;
     }
 }
